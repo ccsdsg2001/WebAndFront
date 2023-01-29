@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" :value="content.c"></input>
+        <!-- 双向绑定 -->
+        <input type="text" v-model="content.c"></input>
+        <p>{{content.c}}</p>
+
+    </div>
+    <script src="vue.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                content:{
+                    c:'cc'
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>         

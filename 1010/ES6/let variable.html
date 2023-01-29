@@ -1,0 +1,80 @@
+<script>
+    let c = 10;
+    let n =1;
+    var a=123;
+    var f =1;
+    {
+        
+        let a =1 ;
+        let b =3;
+    }
+    console.log(c);
+
+    //数组
+    let [x,y,z] =[1,2,3];
+
+//对象解构
+    let user = {"name":"lucy","age":20}
+
+    //从对象中获取值
+    let age1 =user.age;
+    let {name,age} =user;
+
+    //加强版字符串 可自动换行
+    let string = `cc,nutf4n
+    wdasd`; //""
+    console.log(string);
+
+    //字符串中取值
+    let cc = "ccsdsg"
+    let nut = `${cc},ur so handsome`;
+    console.log(nut)
+
+    function aa(){
+        return "cc";
+    }
+
+    let nn=`${aa()},cscs`;
+    console.log(nn);
+    
+//定义变量
+    const ccsdsg ={age1,c};
+    
+    //传统方法定义
+    const person1={
+        sayhi:function(){
+            console.log("1")
+        }
+    }
+    person1.sayhi;
+
+ //es6方法定义
+ const person2={
+        sayhi(){
+            console.log("1")
+        }
+    }
+    person1.sayhi;
+
+
+    //对象复制
+    let name1 ={age:1,name:"cc"};
+    let name2 ={...name1};
+    console.log(name2)
+
+    //合并对象
+    let ccsdsg1 ={name:"faker"};
+    let ccage={age:21}
+    let all = {...ccage,...ccsdsg1}
+    console.log(all)
+
+    //箭头函数
+    var f2 = a => a // funtion(a){return a}
+    console.log(f2(3))
+
+    var f4=(a,b)=> a+b;//funtion(a,b){return a+b}
+    console.log(f4(1,2))
+    
+
+
+</script>

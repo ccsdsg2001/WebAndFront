@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- v-bind指令单向绑定 一般在属性里面 获取值 -->
+        <h1 v-bind:title="message"> 
+            {{content}}
+        </h1>
+        <!-- 简写 :title -->
+    </div>
+    <script src="vue.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                content:'biaoati',
+                message:'time'+new Date().toLocaleString()
+            }
+        })
+    </script>
+</body>
+
+</html>
