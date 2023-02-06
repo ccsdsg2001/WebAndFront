@@ -28,5 +28,8 @@
     "eslint-loader": "^2.1.1",
     "eslint-plugin-vue": "^4.0.0",
     "swiper": "^3.4.2"
-  }
+  },
+  "main": ".eslintrc.js",
+  "keywords": [],
+  "license": "ISC"
 }
